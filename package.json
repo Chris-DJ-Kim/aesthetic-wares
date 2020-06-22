@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,5 +48,5 @@
   "bugs": {
     "url": "https://github.com/juniordj428/aesthetic-wares/issues"
   },
-  "homepage": "https://github.com/juniordj428/aesthetic-wares/"
+  "homepage": "https://juniordj428.github.io/aesthetic-wares/"
 }
