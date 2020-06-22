@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/juniordj428/aesthetic-wares/static/css/main.f71bf111.chunk.css",
+    "main.js": "/juniordj428/aesthetic-wares/static/js/main.86f40ffd.chunk.js",
+    "main.js.map": "/juniordj428/aesthetic-wares/static/js/main.86f40ffd.chunk.js.map",
+    "runtime-main.js": "/juniordj428/aesthetic-wares/static/js/runtime-main.fb55310c.js",
+    "runtime-main.js.map": "/juniordj428/aesthetic-wares/static/js/runtime-main.fb55310c.js.map",
+    "static/js/2.5b3a401d.chunk.js": "/juniordj428/aesthetic-wares/static/js/2.5b3a401d.chunk.js",
+    "static/js/2.5b3a401d.chunk.js.map": "/juniordj428/aesthetic-wares/static/js/2.5b3a401d.chunk.js.map",
+    "index.html": "/juniordj428/aesthetic-wares/index.html",
+    "precache-manifest.1cfe5cb54030ec7a59ded3d081784da4.js": "/juniordj428/aesthetic-wares/precache-manifest.1cfe5cb54030ec7a59ded3d081784da4.js",
+    "service-worker.js": "/juniordj428/aesthetic-wares/service-worker.js",
+    "static/css/main.f71bf111.chunk.css.map": "/juniordj428/aesthetic-wares/static/css/main.f71bf111.chunk.css.map",
+    "static/js/2.5b3a401d.chunk.js.LICENSE.txt": "/juniordj428/aesthetic-wares/static/js/2.5b3a401d.chunk.js.LICENSE.txt",
+    "static/media/bowl.02d83af6.svg": "/juniordj428/aesthetic-wares/static/media/bowl.02d83af6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb55310c.js",
+    "static/js/2.5b3a401d.chunk.js",
+    "static/css/main.f71bf111.chunk.css",
+    "static/js/main.86f40ffd.chunk.js"
+  ]
+}
