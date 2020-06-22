@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14b1ce2be3147ed2c1de36a61175d440",
+    "revision": "afa32bb136e741771d551a1f9227aca2",
     "url": "/aesthetic-wares/index.html"
   },
   {
-    "revision": "e28b955f40cfdb4512c0",
+    "revision": "fd2ab20e72a3952072e4",
     "url": "/aesthetic-wares/static/css/main.dd23c87b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e28b955f40cfdb4512c0",
-    "url": "/aesthetic-wares/static/js/main.e76d47ce.chunk.js"
+    "revision": "fd2ab20e72a3952072e4",
+    "url": "/aesthetic-wares/static/js/main.7651c556.chunk.js"
   },
   {
     "revision": "68e8a55aa1e039dfbac8",

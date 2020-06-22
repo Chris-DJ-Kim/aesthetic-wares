@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/aesthetic-wares/static/css/main.dd23c87b.chunk.css",
-    "main.js": "/aesthetic-wares/static/js/main.e76d47ce.chunk.js",
-    "main.js.map": "/aesthetic-wares/static/js/main.e76d47ce.chunk.js.map",
+    "main.js": "/aesthetic-wares/static/js/main.7651c556.chunk.js",
+    "main.js.map": "/aesthetic-wares/static/js/main.7651c556.chunk.js.map",
     "runtime-main.js": "/aesthetic-wares/static/js/runtime-main.6a018a80.js",
     "runtime-main.js.map": "/aesthetic-wares/static/js/runtime-main.6a018a80.js.map",
     "static/js/2.5b3a401d.chunk.js": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js",
     "static/js/2.5b3a401d.chunk.js.map": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js.map",
     "index.html": "/aesthetic-wares/index.html",
-    "precache-manifest.c2ce6b94e7638536d48b32c353468ced.js": "/aesthetic-wares/precache-manifest.c2ce6b94e7638536d48b32c353468ced.js",
+    "precache-manifest.23e408547d17be6b52174c9658538213.js": "/aesthetic-wares/precache-manifest.23e408547d17be6b52174c9658538213.js",
     "service-worker.js": "/aesthetic-wares/service-worker.js",
     "static/css/main.dd23c87b.chunk.css.map": "/aesthetic-wares/static/css/main.dd23c87b.chunk.css.map",
     "static/js/2.5b3a401d.chunk.js.LICENSE.txt": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6a018a80.js",
     "static/js/2.5b3a401d.chunk.js",
     "static/css/main.dd23c87b.chunk.css",
-    "static/js/main.e76d47ce.chunk.js"
+    "static/js/main.7651c556.chunk.js"
   ]
 }
