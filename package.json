@@ -2,6 +2,7 @@
   "name": "aesthetic-wares",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://juniordj428.github.io/aesthetic-wares/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -47,6 +48,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/juniordj428/aesthetic-wares/issues"
-  },
-  "homepage": "https://juniordj428.github.io/aesthetic-wares/"
+  }
 }
