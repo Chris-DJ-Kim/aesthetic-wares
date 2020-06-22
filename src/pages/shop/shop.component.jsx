@@ -5,8 +5,8 @@ import ShopItem from "../../components/shop-item/shop-item.component";
 import Header from "../../components/header/header.component";
 
 class Shop extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       merchandise: SHOP_ITEMS,
