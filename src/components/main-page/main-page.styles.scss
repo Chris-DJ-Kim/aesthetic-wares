@@ -1,0 +1,28 @@
+.main-page {
+
+    height: 600px;
+    width: 100%;
+
+    .main-image {
+        height: 100%;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .button {
+        width: 20%;
+        height: 50px;
+        letter-spacing: 0.5px;
+        line-height: 50px;
+        padding: 0 35px 0 35px;
+        margin: 15px auto;
+        font-size: 15px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    }
+}
