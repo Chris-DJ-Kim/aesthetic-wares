@@ -82,7 +82,9 @@ class SignUp extends React.Component {
             label="Confirm Password"
             onChange={this.handleChange}
           />
-          <PersonalizedButton type="submit">Sign Up</PersonalizedButton>
+          <div className="button">
+            <PersonalizedButton type="submit">Sign Up</PersonalizedButton>
+          </div>
           {this.state.message}
         </form>
       </div>
