@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Homepage from "./pages/homepage/homepage.component.jsx";
 import Shop from "./pages/shop/shop.component";
 import SignIn from "./pages/sign-in/sign-in.component";
+import Cart from "./pages/cart/cart.component";
 
 import "./App.css";
 
@@ -15,6 +16,7 @@ class App extends React.Component {
           <Route exact path="/" component={Homepage} />
           <Route path="/shop" component={Shop} />
           <Route path="/signin" component={SignIn} />
+          <Route path="/cart" component={Cart} />
         </Switch>
       </div>
     );
