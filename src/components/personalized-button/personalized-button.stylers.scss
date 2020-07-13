@@ -1,5 +1,5 @@
 .personalized-button {
-    min-width: 240px;
+    min-width: 2px;
     width: auto;
     height: 30px;
     padding: 0 10px 0 10px;
@@ -14,7 +14,6 @@
     justify-content: center;
     cursor: pointer;
     border: none;
-    align-items: center;
 
     &:hover {
         background-color: white;
