@@ -36,25 +36,25 @@ const SHOP_ITEMS = [
     label: "Cups",
     items: [
       {
-        id: 1,
+        id: 5,
         name: "Ceramic Cup",
         imageUrl: "https://i.ibb.co/nrxVtp6/ceramic-cup.jpg",
         price: 60,
       },
       {
-        id: 2,
+        id: 6,
         name: "Wooden Cup",
         imageUrl: "https://i.ibb.co/WvkjwVc/wooden-cup.jpg",
         price: 20,
       },
       {
-        id: 3,
+        id: 7,
         name: "Iron Cup",
         imageUrl: "https://i.ibb.co/PMDS5NT/iron-cup.jpg",
         price: 50,
       },
       {
-        id: 4,
+        id: 8,
         name: "Earthenware Cup",
         imageUrl: "https://i.ibb.co/g4BG55W/earthenware-cup.jpg",
         price: 30,

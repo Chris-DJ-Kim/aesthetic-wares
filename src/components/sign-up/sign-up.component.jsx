@@ -83,7 +83,7 @@ class SignUp extends React.Component {
             onChange={this.handleChange}
           />
           <div className="button">
-            <PersonalizedButton type="submit">Sign Up</PersonalizedButton>
+            <PersonalizedButton>Sign Up</PersonalizedButton>
           </div>
           {this.state.message}
         </form>

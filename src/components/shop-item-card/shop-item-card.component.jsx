@@ -1,8 +1,12 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import "./shop-item-card.styles.scss";
 
-const ShopItemCard = ({ item }) => {
+import PersonalizedButton from "../personalized-button/personalized-button.component";
+import { addItem } from "../../redux/cart/cart.actions";
+
+const ShopItemCard = ({ item, addItem }) => {
   const { name, imageUrl, price } = item;
   return (
     <div className="shop-item-card">
@@ -12,8 +16,15 @@ const ShopItemCard = ({ item }) => {
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></div>
       {price}
+      <PersonalizedButton onClick={() => addItem(item)}>
+        Add to Cart
+      </PersonalizedButton>
     </div>
   );
 };
 
-export default ShopItemCard;
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(ShopItemCard);
