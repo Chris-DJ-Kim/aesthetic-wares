@@ -1,7 +1,7 @@
 .dropdown {
     position: absolute;
     width: 250px;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -10,4 +10,32 @@
     right: 100px;
     z-index: 5;
     padding: 20px;
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+    }
+
+    .empty {
+        font-size: 20px;
+        margin: 50px auto;
+
+    }
+
+    .cart-items {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    button {
+        margin-top: auto;
+    }
+
 }
