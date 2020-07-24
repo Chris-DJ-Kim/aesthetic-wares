@@ -1,29 +1,23 @@
 import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import SHOP_ITEMS from "./shop.items";
 import ShopItem from "../../components/shop-item/shop-item.component";
 
-class Shop extends React.Component {
-  constructor() {
-    super();
+import { selectMerchandise } from "../../redux/shop/shop.selectors";
 
-    this.state = {
-      merchandise: SHOP_ITEMS,
-    };
-  }
-
-  render() {
-    const merchandise = this.state.merchandise;
-    return (
-      <div>
-        {merchandise.map(({ id, label, items }) => (
-          <div key={id}>
-            <ShopItem label={label} items={items} />
-          </div>
-        ))}
+const Shop = ({ merchandise }) => (
+  <div>
+    {merchandise.map(({ id, label, items }) => (
+      <div key={id}>
+        <ShopItem label={label} items={items} />
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+);
 
-export default Shop;
+const mapStateToProps = createStructuredSelector({
+  merchandise: selectMerchandise,
+});
+
+export default connect(mapStateToProps)(Shop);
