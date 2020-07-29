@@ -25,5 +25,12 @@
         display: flex;
         justify-content: center;
         border: 0;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
     }
 }

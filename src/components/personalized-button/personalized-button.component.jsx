@@ -1,14 +1,11 @@
 import React from "react";
 
-import "./personalized-button.stylers.scss";
+import { PersonalizedButtonContainer } from "./personalized-button.styles";
 
-const PersonalizedButton = ({ children, googleSignIn, ...otherProps }) => (
-  <button
-    className={`${googleSignIn ? "google-sign-in" : ""} personalized-button`}
-    {...otherProps}
-  >
+const PersonalizedButton = ({ children, ...otherProps }) => (
+  <PersonalizedButtonContainer {...otherProps}>
     {children}
-  </button>
+  </PersonalizedButtonContainer>
 );
 
 export default PersonalizedButton;

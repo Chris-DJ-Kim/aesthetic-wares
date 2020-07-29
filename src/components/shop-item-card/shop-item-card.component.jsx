@@ -16,7 +16,7 @@ const ShopItemCard = ({ item, addItem }) => {
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></div>
       {price}
-      <PersonalizedButton onClick={() => addItem(item)}>
+      <PersonalizedButton isShopItemCard onClick={() => addItem(item)}>
         Add to Cart
       </PersonalizedButton>
     </div>
