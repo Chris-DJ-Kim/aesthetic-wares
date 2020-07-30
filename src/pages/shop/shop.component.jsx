@@ -1,23 +1,49 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
 
-import ShopItem from "../../components/shop-item/shop-item.component";
+import MerchandisePage from "../merchandise/merchandise.component";
 
-import { selectMerchandise } from "../../redux/shop/shop.selectors";
+import ShopOverview from "../../components/shop-overview/shop-overview.component";
 
-const Shop = ({ merchandise }) => (
-  <div>
-    {merchandise.map(({ id, label, items }) => (
-      <div key={id}>
-        <ShopItem label={label} items={items} />
+import { updateMerchandise } from "../../redux/shop/shop.actions.js";
+
+import {
+  firestore,
+  convertCollectionSnapshotToMap,
+} from "../../firebase/firebase.utils";
+
+class Shop extends React.Component {
+  unsubscribeFromSnapshot = null;
+  componentDidMount() {
+    const { updateMerchandise } = this.props;
+    const merchandiseRef = firestore.collection("merchandise");
+    this.unsubscribeFromSnapshot = merchandiseRef.onSnapshot(
+      async (snaphot) => {
+        const merchandiseMap = convertCollectionSnapshotToMap(snaphot);
+        updateMerchandise(merchandiseMap);
+      }
+    );
+  }
+
+  render() {
+    const { match } = this.props;
+    console.log(match);
+    return (
+      <div>
+        <Route exact path={`${match.path}`} component={ShopOverview} />
+        <Route
+          path={`${match.path}/:merchandiseId`}
+          component={MerchandisePage}
+        />
       </div>
-    ))}
-  </div>
-);
+    );
+  }
+}
 
-const mapStateToProps = createStructuredSelector({
-  merchandise: selectMerchandise,
+const mapDispatchToProps = (dispatch) => ({
+  updateMerchandise: (merchandiseMap) =>
+    dispatch(updateMerchandise(merchandiseMap)),
 });
 
-export default connect(mapStateToProps)(Shop);
+export default connect(null, mapDispatchToProps)(Shop);
