@@ -8,12 +8,22 @@ export const selectMerchandise = createSelector(
 );
 
 export const selectOneMerchandise = (merchandiseUrlParam) =>
-  createSelector(
-    [selectMerchandise],
-    (merchandise) => merchandise[merchandiseUrlParam]
+  createSelector([selectMerchandise], (merchandise) =>
+    merchandise ? merchandise[merchandiseUrlParam] : null
   );
 
 export const selectMerchandiseForPreview = createSelector(
   [selectMerchandise],
-  (merchandise) => Object.keys(merchandise).map((key) => merchandise[key])
+  (merchandise) =>
+    merchandise ? Object.keys(merchandise).map((key) => merchandise[key]) : []
+);
+
+export const selectIsMerchandiseFetching = createSelector(
+  [selectShop],
+  (shop) => shop.isFetching
+);
+
+export const selectIsMerchandiseLoaded = createSelector(
+  [selectShop],
+  (shop) => !!shop.merchandise
 );

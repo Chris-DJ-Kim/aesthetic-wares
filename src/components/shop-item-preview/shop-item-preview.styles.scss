@@ -2,6 +2,11 @@
 
     position: relative;
 
+    .label {
+        cursor: pointer;
+        width: 4%
+    }
+
     .card {
         display: flex;
         justify-content: space-between;

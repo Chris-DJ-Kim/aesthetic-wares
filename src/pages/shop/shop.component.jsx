@@ -2,39 +2,25 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import MerchandisePage from "../merchandise/merchandise.component";
+import MerchandisePageContainer from "../merchandise/merchandise.container";
 
-import ShopOverview from "../../components/shop-overview/shop-overview.component";
+import ShopOverviewContainer from "../../components/shop-overview/shop-overview.container";
 
-import { updateMerchandise } from "../../redux/shop/shop.actions.js";
-
-import {
-  firestore,
-  convertCollectionSnapshotToMap,
-} from "../../firebase/firebase.utils";
+import { fetchMerchandiseStartAsync } from "../../redux/shop/shop.actions.js";
 
 class Shop extends React.Component {
-  unsubscribeFromSnapshot = null;
   componentDidMount() {
-    const { updateMerchandise } = this.props;
-    const merchandiseRef = firestore.collection("merchandise");
-    this.unsubscribeFromSnapshot = merchandiseRef.onSnapshot(
-      async (snaphot) => {
-        const merchandiseMap = convertCollectionSnapshotToMap(snaphot);
-        updateMerchandise(merchandiseMap);
-      }
-    );
+    const { fetchMerchandiseStartAsync } = this.props;
+    fetchMerchandiseStartAsync();
   }
-
   render() {
     const { match } = this.props;
-    console.log(match);
     return (
       <div>
-        <Route exact path={`${match.path}`} component={ShopOverview} />
+        <Route exact path={`${match.path}`} component={ShopOverviewContainer} />
         <Route
           path={`${match.path}/:merchandiseId`}
-          component={MerchandisePage}
+          component={MerchandisePageContainer}
         />
       </div>
     );
@@ -42,8 +28,7 @@ class Shop extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  updateMerchandise: (merchandiseMap) =>
-    dispatch(updateMerchandise(merchandiseMap)),
+  fetchMerchandiseStartAsync: () => dispatch(fetchMerchandiseStartAsync()),
 });
 
 export default connect(null, mapDispatchToProps)(Shop);
