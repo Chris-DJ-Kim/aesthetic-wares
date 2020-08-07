@@ -6,12 +6,12 @@ import MerchandisePageContainer from "../merchandise/merchandise.container";
 
 import ShopOverviewContainer from "../../components/shop-overview/shop-overview.container";
 
-import { fetchMerchandiseStartAsync } from "../../redux/shop/shop.actions.js";
+import { fetchMerchandiseStart } from "../../redux/shop/shop.actions.js";
 
 class Shop extends React.Component {
   componentDidMount() {
-    const { fetchMerchandiseStartAsync } = this.props;
-    fetchMerchandiseStartAsync();
+    const { fetchMerchandiseStart } = this.props;
+    fetchMerchandiseStart();
   }
   render() {
     const { match } = this.props;
@@ -28,7 +28,7 @@ class Shop extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchMerchandiseStartAsync: () => dispatch(fetchMerchandiseStartAsync()),
+  fetchMerchandiseStart: () => dispatch(fetchMerchandiseStart()),
 });
 
 export default connect(null, mapDispatchToProps)(Shop);
