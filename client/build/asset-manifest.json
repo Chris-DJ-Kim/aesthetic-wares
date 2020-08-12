@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/aesthetic-wares/static/css/main.dd23c87b.chunk.css",
+    "main.js": "/aesthetic-wares/static/js/main.7651c556.chunk.js",
+    "main.js.map": "/aesthetic-wares/static/js/main.7651c556.chunk.js.map",
+    "runtime-main.js": "/aesthetic-wares/static/js/runtime-main.6a018a80.js",
+    "runtime-main.js.map": "/aesthetic-wares/static/js/runtime-main.6a018a80.js.map",
+    "static/js/2.5b3a401d.chunk.js": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js",
+    "static/js/2.5b3a401d.chunk.js.map": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js.map",
+    "index.html": "/aesthetic-wares/index.html",
+    "precache-manifest.23e408547d17be6b52174c9658538213.js": "/aesthetic-wares/precache-manifest.23e408547d17be6b52174c9658538213.js",
+    "service-worker.js": "/aesthetic-wares/service-worker.js",
+    "static/css/main.dd23c87b.chunk.css.map": "/aesthetic-wares/static/css/main.dd23c87b.chunk.css.map",
+    "static/js/2.5b3a401d.chunk.js.LICENSE.txt": "/aesthetic-wares/static/js/2.5b3a401d.chunk.js.LICENSE.txt",
+    "static/media/bowl.1eccd2d6.svg": "/aesthetic-wares/static/media/bowl.1eccd2d6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a018a80.js",
+    "static/js/2.5b3a401d.chunk.js",
+    "static/css/main.dd23c87b.chunk.css",
+    "static/js/main.7651c556.chunk.js"
+  ]
+}
