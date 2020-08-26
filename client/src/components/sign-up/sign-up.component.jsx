@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 
-import "./sign-up.styles.scss";
+import { SignUpContainer, ButtonContainer } from "./sign-up.styles";
 
 import PersonalizedButton from "../personalized-button/personalized-button.component";
 import CustomFormInput from "../custom-form-input/custom-form-input.component";
@@ -39,7 +39,7 @@ const SignUp = ({ signUpStart }) => {
   };
 
   return (
-    <div className="sign-up">
+    <SignUpContainer>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <CustomFormInput
@@ -63,11 +63,11 @@ const SignUp = ({ signUpStart }) => {
           label="Confirm Password"
           onChange={handleChange}
         />
-        <div className="button">
+        <ButtonContainer>
           <PersonalizedButton>Sign Up</PersonalizedButton>
-        </div>
+        </ButtonContainer>
       </form>
-    </div>
+    </SignUpContainer>
   );
 };
 

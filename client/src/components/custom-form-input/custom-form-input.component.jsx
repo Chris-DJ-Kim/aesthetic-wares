@@ -1,16 +1,16 @@
 import React from "react";
 
-import "./custom-form-input.styles.scss";
+import {
+  InputComponentsContainer,
+  CustomFormInputInput,
+  CustomFormLabel,
+} from "./custom-form-input-styles";
 
 const CustomFormInput = ({ handleChange, label, ...otherProps }) => (
-  <div className="input-components">
-    <input
-      className="custom-form-input"
-      onChange={handleChange}
-      {...otherProps}
-    />
-    <label className="custom-form-input-label">{label}</label>
-  </div>
+  <InputComponentsContainer>
+    <CustomFormInputInput onChange={handleChange} {...otherProps} />
+    <CustomFormLabel>{label}</CustomFormLabel>
+  </InputComponentsContainer>
 );
 
 export default CustomFormInput;

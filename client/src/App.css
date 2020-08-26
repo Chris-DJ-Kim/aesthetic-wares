@@ -1,6 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
   padding: 20px 120px;
+
+  @media screen and (max-width: 800px) {
+    padding: 10px;
+  }
 }
 
 a {

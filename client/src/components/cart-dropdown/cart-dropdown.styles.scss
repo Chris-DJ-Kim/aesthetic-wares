@@ -21,17 +21,19 @@
         border-radius: 20px;
     }
 
-    .empty {
-        font-size: 20px;
-        margin: 50px auto;
-
-    }
 
     .cart-items {
         height: 300px;
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
+
+        .empty {
+            font-size: 20px;
+            margin: 50px auto;
+
+        }
+
     }
 
     button {

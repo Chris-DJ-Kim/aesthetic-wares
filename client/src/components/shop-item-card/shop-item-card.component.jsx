@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import "./shop-item-card.styles.scss";
+import { ShopItemCardContainer, ImageContainer } from "./shop-item-card.styles";
 
 import PersonalizedButton from "../personalized-button/personalized-button.component";
 import { addItem } from "../../redux/cart/cart.actions";
@@ -9,17 +9,16 @@ import { addItem } from "../../redux/cart/cart.actions";
 const ShopItemCard = ({ item, addItem }) => {
   const { name, imageUrl, price } = item;
   return (
-    <div className="shop-item-card">
+    <ShopItemCardContainer>
       {name}
-      <div
-        className="image"
+      <ImageContainer
         style={{ backgroundImage: `url(${imageUrl})` }}
-      ></div>
+      ></ImageContainer>
       {price}
       <PersonalizedButton isShopItemCard onClick={() => addItem(item)}>
         Add to Cart
       </PersonalizedButton>
-    </div>
+    </ShopItemCardContainer>
   );
 };
 

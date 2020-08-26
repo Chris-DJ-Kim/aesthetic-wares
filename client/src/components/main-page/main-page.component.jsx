@@ -1,22 +1,23 @@
 import React from "react";
 
-import "./main-page.styles.scss";
+import {
+  MainPageContainer,
+  MainPageImageContainer,
+  ShopButtonLink,
+} from "./main-page.styles";
 import { Link } from "react-router-dom";
 
 const Mainpage = () => {
   const Background = "https://i.ibb.co/HX1vCzS/main-page.jpg";
   return (
-    <div className="main-page">
-      <div
-        className="main-image"
+    <MainPageContainer>
+      <MainPageImageContainer
         style={{
           backgroundImage: `url(${Background})`,
         }}
-      ></div>
-      <Link className="button" to="/shop">
-        SHOP NOW
-      </Link>
-    </div>
+      ></MainPageImageContainer>
+      <ShopButtonLink to="/shop">SHOP NOW</ShopButtonLink>
+    </MainPageContainer>
   );
 };
 

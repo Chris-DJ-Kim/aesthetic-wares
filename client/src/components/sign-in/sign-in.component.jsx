@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 
-import "./sign-in.styles.scss";
+import { SignInContainer, ButtonsContainer } from "./sign-in.styles";
 
 import PersonalizedButton from "../personalized-button/personalized-button.component";
 import CustomFormInput from "../custom-form-input/custom-form-input.component";
@@ -36,7 +36,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   };
 
   return (
-    <div className="sign-in">
+    <SignInContainer>
       <h2>Sign In</h2>
       <form onSubmit={handleSubmit}>
         <CustomFormInput
@@ -56,7 +56,7 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           required
         />
 
-        <div className="buttons">
+        <ButtonsContainer>
           <PersonalizedButton type="submit">Sign In</PersonalizedButton>
           <PersonalizedButton
             type="button"
@@ -65,9 +65,9 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
           >
             Sign In with Google
           </PersonalizedButton>
-        </div>
+        </ButtonsContainer>
       </form>
-    </div>
+    </SignInContainer>
   );
 };
 

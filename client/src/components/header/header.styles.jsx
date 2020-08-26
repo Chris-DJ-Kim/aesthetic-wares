@@ -7,11 +7,20 @@ export const HeaderContainer = styled.div`
   margin-bottom: 25px;
   justify-content: space-between;
   display: flex;
+
+  @media screen and (max-width: 800px) {
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
 `;
 
 export const LogoContainer = styled(Link)`
   height: 70%;
   width: 40px;
+  @media screen and (max-width: 800px) {
+    width: 25px;
+  }
 `;
 
 export const LinksContainer = styled.div`
@@ -20,6 +29,9 @@ export const LinksContainer = styled.div`
   height: 100%;
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 800px) {
+    width: 75%;
+  }
 `;
 
 export const LinkLink = styled(Link)`
