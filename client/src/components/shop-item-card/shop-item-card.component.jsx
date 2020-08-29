@@ -1,9 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { ShopItemCardContainer, ImageContainer } from "./shop-item-card.styles";
+import {
+  ShopItemCardContainer,
+  ImageContainer,
+  AddToCartButton,
+} from "./shop-item-card.styles";
 
-import PersonalizedButton from "../personalized-button/personalized-button.component";
 import { addItem } from "../../redux/cart/cart.actions";
 
 const ShopItemCard = ({ item, addItem }) => {
@@ -12,12 +15,13 @@ const ShopItemCard = ({ item, addItem }) => {
     <ShopItemCardContainer>
       {name}
       <ImageContainer
+        className="image"
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></ImageContainer>
       {price}
-      <PersonalizedButton isShopItemCard onClick={() => addItem(item)}>
-        Add to Cart
-      </PersonalizedButton>
+      <AddToCartButton isShopItemCard onClick={() => addItem(item)}>
+        Add To Cart
+      </AddToCartButton>
     </ShopItemCardContainer>
   );
 };

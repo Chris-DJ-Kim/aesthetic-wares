@@ -5,7 +5,6 @@ import {
   MainPageImageContainer,
   ShopButtonLink,
 } from "./main-page.styles";
-import { Link } from "react-router-dom";
 
 const Mainpage = () => {
   const Background = "https://i.ibb.co/HX1vCzS/main-page.jpg";

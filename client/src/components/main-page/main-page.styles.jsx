@@ -34,4 +34,8 @@ export const ShopButtonLink = styled(Link)`
     color: black;
     border: 2px solid black;
   }
+
+  @media screen and (max-width: 800px) {
+    width: unset;
+  }
 `;

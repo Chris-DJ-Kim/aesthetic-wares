@@ -1,15 +1,26 @@
 .merchandise-page {
+    align-items: center;
+    position: relative;
     display: flex;
     flex-direction: column;
 
     .label {
         cursor: pointer;
+        width: 4%;
     }
 
     .items {
         display: grid;
         justify-content: space-between;
         padding: 100px 0;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 50px;
+
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+            padding: 100 0px
+        }
     }
 }
