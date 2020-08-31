@@ -13,6 +13,9 @@ export const ShopItemContainer = styled.div`
 export const LabelContainer = styled.div`
   cursor: pointer;
   width: 4%;
+  @media screen and (max-width: 800px) {
+    width: unset;
+  }
 `;
 
 export const CardContainer = styled.div`

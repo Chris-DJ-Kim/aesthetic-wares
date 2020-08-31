@@ -17,6 +17,7 @@ export const ShopItemCardContainer = styled.div`
   }
 
   @media screen and (max-width: 800px) {
+    margin-top: 50px;
     width: 35vw;
 
     &:hover {
@@ -27,6 +28,10 @@ export const ShopItemCardContainer = styled.div`
   }
 `;
 
+export const LabelContainer = styled.div`
+  text-align: center;
+`;
+
 export const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -34,6 +39,11 @@ export const ImageContainer = styled.div`
   background-size: cover;
   min-height: 300px;
   min-width: 300px;
+
+  @media screen and (max-width: 800px) {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+  }
 `;
 
 export const AddToCartButton = styled(PersonalizedButton)`

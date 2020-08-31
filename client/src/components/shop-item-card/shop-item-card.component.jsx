@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import {
   ShopItemCardContainer,
+  LabelContainer,
   ImageContainer,
   AddToCartButton,
 } from "./shop-item-card.styles";
@@ -13,7 +14,7 @@ const ShopItemCard = ({ item, addItem }) => {
   const { name, imageUrl, price } = item;
   return (
     <ShopItemCardContainer>
-      {name}
+      <LabelContainer> {name}</LabelContainer>
       <ImageContainer
         className="image"
         style={{ backgroundImage: `url(${imageUrl})` }}

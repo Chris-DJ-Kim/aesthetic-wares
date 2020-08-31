@@ -3,4 +3,10 @@
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
+
+    @media screen and (max-width: 800px) {
+        display: grid;
+        align-items: center;
+    }
+
 }

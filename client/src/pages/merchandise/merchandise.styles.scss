@@ -7,6 +7,10 @@
     .label {
         cursor: pointer;
         width: 4%;
+
+        @media screen and (max-width: 800px) {
+            width: unset;
+        }
     }
 
     .items {
