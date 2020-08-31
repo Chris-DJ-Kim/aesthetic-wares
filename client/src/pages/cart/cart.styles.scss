@@ -1,11 +1,12 @@
 .cart {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 100px auto 0;
 
     @media screen and (max-width:800px) {
+        width: 100%;
         margin: unset;
         font-size: 12px;
     }
